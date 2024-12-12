@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
                 <Link href="/about" className={styles.siteMapLink}>
                   About
                 </Link>
-                <Link href="/topics" className={styles.siteMapLink}>
+                <Link href="https://acccbe.org/engineering-conference-themes/" className={styles.siteMapLink}>
                   Topics
                 </Link>
                 <Link href="/venue" className={styles.siteMapLink}>
@@ -104,7 +104,7 @@ const Footer: React.FC = () => {
                 <Link href="/organisers" className={styles.siteMapLink}>
                   Organisers
                 </Link>
-                <Link href="/committee" className={styles.siteMapLink}>
+                <Link href="https://acccbe.org/committees/" className={styles.siteMapLink}>
                   Committee
                 </Link>
                 <Link href="/speakers" className={styles.siteMapLink}>

@@ -4,11 +4,17 @@ interface Props {
   text: string;
   href?: string;
   download?: string;
+  width?: number;
 }
 
-const Btn = ({ text, href, download }: Props) => {
+const Btn = ({ text, href, download, width }: Props) => {
   return (
-    <a className={styles["btn"]} href={href} download={download}>
+    <a
+      className={styles["btn"]}
+      href={href}
+      download={download}
+      style={{ width: width }}
+    >
       {text}
     </a>
   );
