@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import styles from "./NavBar.module.css";
 import Image from "next/image";
 import Btn from "./Button";
+import styles from "./NavBar.module.css";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,133 +28,38 @@ const Nav = () => {
           </Link>
         </div>
         <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
-          <div
-            className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}
-          ></div>
-          <div
-            className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}
-          ></div>
-          <div
-            className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}
-          ></div>
+          <div className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}></div>
+          <div className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}></div>
+          <div className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}></div>
         </div>
-        <nav
-          className={`${styles["menu-links"]} ${isOpen ? styles["open"] : ""}`}
-        >
-          {location.pathname === "/" ? (
-            <>
-              <a
-                href="#home"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                About
-              </a>
-              <a
-                href="#topics"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                Topics
-              </a>
-              <a
-                href="#speakers"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                Speakers
-              </a>
-              <a
-                href="#papers"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                Papers
-              </a>
-              <Link href="/organisers" className={styles["menu-link"]}>
-                Organisers
-              </Link>
-              <Link href="/program" className={styles["menu-link"]}>
-                Program
-              </Link>
-              <Link href="/travel" className={styles["menu-link"]}>
-                Venue
-              </Link>
-              <a
-                href="#contact"
-                className={styles["menu-link"]}
-                onClick={toggleMenu}
-              >
-                Contact
-              </a>
-            </>
-          ) : (
-            <>
-              <div
-                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className={styles["menu-link"]}
-              >
-                Home
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({ top: 1560, behavior: "smooth" })
-                }
-                className={styles["menu-link"]}
-              >
-                About
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({ top: 4900, behavior: "smooth" })
-                }
-                className={styles["menu-link"]}
-              >
-                Topics
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({ top: 5580, behavior: "smooth" })
-                }
-                className={styles["menu-link"]}
-              >
-                Speakers
-              </div>
-              <div
-                onClick={() =>
-                  window.scrollTo({ top: 6500, behavior: "smooth" })
-                }
-                className={styles["menu-link"]}
-              >
-                Papers
-              </div>
-              <Link href="/organisers" className={styles["menu-link"]}>
-                Organisers
-              </Link>
-              <Link href="/program" className={styles["menu-link"]}>
-                Program
-              </Link>
-              <Link href="/travel" className={styles["menu-link"]}>
-                Venue
-              </Link>
-              <div
-                onClick={() =>
-                  window.scrollTo({ top: 11200, behavior: "smooth" })
-                }
-                className={styles["menu-link"]}
-              >
-                Contact
-              </div>
-            </>
-          )}
-
+        <nav className={`${styles["menu-links"]} ${isOpen ? styles["open"] : ""}`}>
+          <Link href="/" className={styles["menu-link"]} onClick={toggleMenu}>
+            Home
+          </Link>
+          <Link href="/#about" className={styles["menu-link"]} onClick={toggleMenu}>
+            About
+          </Link>
+          <Link href="/#topics" className={styles["menu-link"]} onClick={toggleMenu}>
+            Topics
+          </Link>
+          <Link href="/#speakers" className={styles["menu-link"]} onClick={toggleMenu}>
+            Speakers
+          </Link>
+          <Link href="/#papers" className={styles["menu-link"]} onClick={toggleMenu}>
+            Papers
+          </Link>
+          <Link href="/organisers" className={styles["menu-link"]}>
+            Organisers
+          </Link>
+          <Link href="/program" className={styles["menu-link"]}>
+            Program
+          </Link>
+          <Link href="/travel" className={styles["menu-link"]}>
+            Venue
+          </Link>
+          <Link href="/#contact" className={styles["menu-link"]} onClick={toggleMenu}>
+            Contact
+          </Link>
           <div className={styles["menu-link"]}>
             <Btn text="Register" />
           </div>
