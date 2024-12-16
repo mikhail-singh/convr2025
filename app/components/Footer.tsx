@@ -112,9 +112,6 @@ const Footer: React.FC = () => {
             <p className={styles.copyright}>
               ©2025 CONVR2025. All Rights Reserved.
             </p>
-            <Link href="/privacy">
-              <p className={styles.privacy}>Privacy Policy</p>
-            </Link>
           </div>
         </div>
       </div>

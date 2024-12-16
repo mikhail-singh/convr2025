@@ -19,7 +19,7 @@
     position: relative;
     display: inline-block;
     will-change: transform;
-    color: white;
+    color: var(--background-color);
     font-weight: 100;
     letter-spacing: 0.02em;
     font-size: 16pt;

@@ -8,7 +8,7 @@ interface ResponsiveImageProps {
   alt?: string;
 }
 
-const images = ["./landing1", "./landing2", "./landing3", "./landing4"];
+const images = ["/landing5", "/landing2", "/landing2"];
 
 const preloadImage = (src: string) => {
   const img = new Image();
@@ -40,13 +40,13 @@ const Landing: React.FC<ResponsiveImageProps> = ({ alt }) => {
               className={`${styles["background"]} ${
                 index === currentIndex ? styles["fade-in"] : styles["fade-out"]
               }`}
-              src={`${image}_640w.webp`}
+              src={`${image}.jpg`}
               alt={alt}
             />
           ))}
         </div>
         <div className={styles["text-container"]}>
-          <p>Day Month 2025</p>
+          <p>01 Nov 2025</p>
           <h1>CONVR 2025</h1>
           <h1 className={styles.title}>Cape Town, South Africa</h1>
           <Btn

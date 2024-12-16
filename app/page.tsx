@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Banner2 from "./components/Banner2";
+import Contact from "./components/Contact";
 import ImgTextBanner from "./components/ImgTextBanner";
 import Landing from "./components/Landing";
 import Marquee from "./components/Marquee";
@@ -16,6 +17,7 @@ export default function Home() {
       />
       <Banner2 title1="Why participate in this event?" />
       <ImgTextBanner />
+      <Contact />
     </div>
   );
 }
