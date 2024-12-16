@@ -36,13 +36,13 @@ const Nav = () => {
           <Link href="/" className={styles["menu-link"]} onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/#about" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="/about" className={styles["menu-link"]} onClick={toggleMenu}>
             About
           </Link>
           <Link href="https://acccbe.org/engineering-conference-themes/" className={styles["menu-link"]} onClick={toggleMenu}>
             Topics
           </Link>
-          <Link href="/#papers" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="/papers" className={styles["menu-link"]} onClick={toggleMenu}>
             Papers
           </Link>
           <Link href="https://acccbe.org/committees/" className={styles["menu-link"]}>
@@ -54,7 +54,7 @@ const Nav = () => {
           <Link href="/travel" className={styles["menu-link"]}>
             Venue
           </Link>
-          <Link href="/#contact" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="/contact" className={styles["menu-link"]} onClick={toggleMenu}>
             Contact
           </Link>
           <div className={styles["menu-link"]}>

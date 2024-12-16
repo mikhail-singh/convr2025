@@ -17,13 +17,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 40vh;
   width: 100%;
   max-width: var(--max-width);
+  padding: var(--padding-sides);
   z-index: 1;
 }
 
 .text-container p {
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 

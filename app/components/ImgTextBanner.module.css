@@ -1,0 +1,89 @@
+.container-wrapper {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 1200px;
+  height: auto;
+  flex-direction: row;
+}
+
+.left-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper {
+  width: 320px; /* Adjust width */
+  height: 480px; /* Adjust height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.right-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.right-container h1 {
+  margin-bottom: 20px;
+}
+
+.right-container ul {
+  list-style: circle;
+}
+
+.right-container ul {
+    font-family: "Brooklyn";
+    line-height: 30px;
+}
+
+/* Mobile Responsive Settings */
+@media screen and (max-width: 932px) {
+  .container-wrapper {
+    padding-top: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-left: var(--padding-sides-mobile);
+    margin-right: var(--padding-sides-mobile);
+  }
+
+  .img-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-container {
+    padding-top: 20px;
+  }
+
+  .right-container h1 {
+    font-size: 32pt;
+    margin-bottom: 0;
+  }
+}
