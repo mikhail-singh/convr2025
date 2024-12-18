@@ -46,7 +46,7 @@ const Landing: React.FC<ResponsiveImageProps> = ({ alt }) => {
           ))}
         </div>
         <div className={styles["text-container"]}>
-          <p>01 Nov 2025</p>
+          <p>10 Nov 2025</p>
           <h1>CONVR 2025</h1>
           <h1 className={styles.title}>Cape Town, South Africa</h1>
           <Btn

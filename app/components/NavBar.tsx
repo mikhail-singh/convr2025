@@ -42,7 +42,7 @@ const Nav = () => {
           <Link href="https://acccbe.org/engineering-conference-themes/" className={styles["menu-link"]} onClick={toggleMenu}>
             Topics
           </Link>
-          <Link href="/papers" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="https://acccbe.org/abstracts/" className={styles["menu-link"]} onClick={toggleMenu}>
             Papers
           </Link>
           <Link href="https://acccbe.org/committees/" className={styles["menu-link"]}>

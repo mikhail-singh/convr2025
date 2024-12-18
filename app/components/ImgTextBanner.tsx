@@ -38,10 +38,19 @@ const ImgTextBanner = () => {
             </li>
             <li>Advanced Digital Manufacturing in Built Environment</li>
             <li>
-              Digital and Circular Economy in the Built Environment Industry
+              Infrastructure Asset Management using Immersive Technologies
             </li>
             <li>
-              Infrastructure Asset Management using Immersive Technologies
+              Decarbonisation of Transportation Systems
+            </li>
+            <li>
+              Minimising Carbon Emissions with Innovative Digital Technologies (IOT, AI, Embedded Systems)
+            </li>
+            <li>
+              Application of Natural Language Processing for Construction Information
+            </li>
+            <li>
+              Social Acceptance of Digital Technologies
             </li>
           </ul>
         </div>
