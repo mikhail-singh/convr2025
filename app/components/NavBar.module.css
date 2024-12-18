@@ -30,6 +30,16 @@
   position: relative;
   display: flex;
   align-items: center;
+  filter: brightness(0);
+  gap: 20px;
+}
+
+.divider {
+  position: relative;
+  width: 1px;
+  height: 55%;
+  margin-top: -5px;
+  background-color: var(--secondary-color);
 }
 
 .menu-links {

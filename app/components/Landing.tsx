@@ -8,7 +8,7 @@ interface ResponsiveImageProps {
   alt?: string;
 }
 
-const images = ["/landing5", "/landing2", "/landing2"];
+const images = ["/landing5", "/landing2"];
 
 const preloadImage = (src: string) => {
   const img = new Image();

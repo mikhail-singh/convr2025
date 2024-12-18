@@ -33,10 +33,10 @@
     margin: 0;
     height: 40px;
     width: 200px;
+    background-image: url(/ACCCBE.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(1) brightness(100);
   }
   
   .marquee-mobile {

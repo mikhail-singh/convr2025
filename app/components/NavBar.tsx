@@ -26,6 +26,16 @@ const Nav = () => {
               height={32}
             />
           </Link>
+          <div className={styles.divider} />
+          <Link href="https://acccbe.org/">
+            <Image
+              src="/ACCCBE.webp"
+              alt="ACCCBE Logo"
+              className={styles["logo"]}
+              width={70}
+              height={36}
+            />
+          </Link>
         </div>
         <div className={styles["hamburger-menu"]} onClick={toggleMenu}>
           <div className={`${styles["bar"]} ${isOpen ? styles["change"] : ""}`}></div>

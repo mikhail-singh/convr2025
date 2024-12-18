@@ -44,9 +44,16 @@ const Marquee = () => {
 
       translateTarget = ((elWidth - windowWidth) / windowWidth) * mouseX * -0.4;
       skewWithEasing = lerp(skewWithEasing, skewTarget, skewEasingFactor);
-      skewWithEasing = Math.min(Math.max(parseInt(skewWithEasing.toString()), -75), 75);
+      skewWithEasing = Math.min(
+        Math.max(parseInt(skewWithEasing.toString()), -75),
+        75
+      );
 
-      translateWithEasing = lerp(translateWithEasing, translateTarget, translateEasingFactor);
+      translateWithEasing = lerp(
+        translateWithEasing,
+        translateTarget,
+        translateEasingFactor
+      );
 
       el.style.transform = `translateX(${translateWithEasing}px) skew(${skewWithEasing}deg)`;
 
@@ -69,19 +76,19 @@ const Marquee = () => {
       <div className={styles["marquee-wrapper"]} ref={marqueeRef}>
         <div className={styles["marquee-img"]}></div>
         <p className={styles["marquee-text"]}>
-          The CONVR2025 proceedings will be published and indexed by Springer.
+          CONVR2025 is partnering with ACCCBE
         </p>
         <div className={styles["marquee-img"]}></div>
         <p className={styles["marquee-text"]}>
-          The CONVR2025 proceedings will be published and indexed by Springer.
+          CONVR2025 is partnering with ACCCBE
         </p>
         <div className={styles["marquee-img"]}></div>
         <p className={styles["marquee-text"]}>
-          The CONVR2025 proceedings will be published and indexed by Springer.
+          CONVR2025 is partnering with ACCCBE
         </p>
         <div className={styles["marquee-img"]}></div>
         <p className={styles["marquee-text"]}>
-          The CONVR2025 proceedings will be published and indexed by Springer.
+          CONVR2025 is partnering with ACCCBE
         </p>
       </div>
     </div>
