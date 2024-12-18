@@ -103,3 +103,11 @@ p {
   font-weight: 100;
   font-style: normal;
 }
+
+/* Mobile Responsive Settings */
+@media screen and (max-width: 932px) {
+  h1 {
+    font-size: 32pt;
+    line-height: 42px;
+  }
+}

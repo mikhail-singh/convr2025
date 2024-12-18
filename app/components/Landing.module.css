@@ -79,3 +79,16 @@
   border: 0.1em solid var(--background-color);
   cursor: pointer;
 }
+
+/* Mobile Responsive Settings */
+@media screen and (max-width: 932px) {
+  .text-container h1 {
+    font-size: 32pt;
+    line-height: 42px;
+    width: 100%;
+  }
+
+  .circles {
+    display: none;
+  }
+}
