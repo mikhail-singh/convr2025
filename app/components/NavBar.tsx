@@ -46,30 +46,30 @@ const Nav = () => {
           <Link href="/" className={styles["menu-link"]} onClick={toggleMenu}>
             Home
           </Link>
-          <Link href="/about" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="https://acccbe.org/about/" className={styles["menu-link"]} onClick={toggleMenu}>
             About
           </Link>
           <Link href="https://acccbe.org/engineering-conference-themes/" className={styles["menu-link"]} onClick={toggleMenu}>
             Topics
           </Link>
-          <Link href="https://acccbe.org/abstracts/" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="https://acccbe.org/submissions/" className={styles["menu-link"]} onClick={toggleMenu}>
             Papers
           </Link>
           <Link href="https://acccbe.org/committees/" className={styles["menu-link"]}>
             Organisers
           </Link>
-          <Link href="/program" className={styles["menu-link"]}>
+          <Link href="https://acccbe.org/engineering-conference-themes/" className={styles["menu-link"]}>
             Program
           </Link>
-          <Link href="/travel" className={styles["menu-link"]}>
+          <Link href="https://acccbe.org/accommodation/" className={styles["menu-link"]}>
             Venue
           </Link>
-          <Link href="/contact" className={styles["menu-link"]} onClick={toggleMenu}>
+          <Link href="https://acccbe.org/contact-us/" className={styles["menu-link"]} onClick={toggleMenu}>
             Contact
           </Link>
-          <div className={styles["menu-link"]}>
+          <Link href="/" className={styles["menu-link"]}>
             <Btn text="Register" />
-          </div>
+          </Link>
         </nav>
       </div>
     </div>
